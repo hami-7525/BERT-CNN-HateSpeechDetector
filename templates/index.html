@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hate Speech Detection</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #4e54c8, #8f94fb); /* Gradient background */
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        form {
+            margin: 0 auto;
+            width: 50%;
+        }
+        textarea {
+            width: 100%;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HATE SPEECH DETECTION</h1>
+    <form action="/predict" method="post">
+        <label for="comment">Enter your comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Predict">
+    </form>
+    <div class="image-container">
+        <img src="C:\Users\hamee\OneDrive\Desktop\project\hatespeech.png" alt="Image" style="margin-top: 20px;">
+    </div>
+</body>
+</html>
